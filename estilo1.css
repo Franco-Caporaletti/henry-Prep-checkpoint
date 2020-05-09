@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#contenedor{
+    width: 500px;
+    margin: 0px auto;
+    background-color: yellow;
+}
+ul{
+    
+    font-size: 25px;
+    color: red;
+    display: inline-block;
+    margin: 30px;
+    padding: 0px
+}
+img{
+    width: 450px;
+    height: 400px;
+    margin: 14px;
+    padding: 0px;
+}
