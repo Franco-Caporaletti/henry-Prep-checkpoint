@@ -5,6 +5,9 @@ function menorMayor(numeros) {
   // Escribi una función llamada menorMayor que tome como entrada un arreglo de números y devuelva un arreglo 
   // que contenga el menor número del arreglo en la posición cero y el mayor número del arreglo en la posición 1.
   // Ej: menorMayor([4, 6, 1, 7, 15]) // retorna [1, 15]
+  var maxValue = Math.max.apply(null,numeros);
+  var minValue = Math.min.apply(null,numeros);
+  return array = [minValue,maxValue]
 }
 
 function stringMasLarga(strings) {
@@ -64,10 +67,11 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
   // pista: es una buena oportunidad para usar map.
-  var propiedades = array.map(function(elemento){
-    return elemento.name;
-  })
-  return propiedades;
+  let nameOfProducts = [];
+  for(let i = 0; i < array.length; i++) {
+    nameOfProducts.push(array[i][propiedad]);
+  }
+  return nameOfProducts;
 }
 
 // =======================================================================
